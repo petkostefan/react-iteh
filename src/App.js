@@ -31,14 +31,7 @@ function App() {
       description:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum in cumque rerum numquam fugit id error, cum fugiat porro.",
       likes:0
-    },
-    {
-      id: 4,
-      title: "Cetvrti post",
-      description:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum in cumque rerum numquam fugit id error, cum fugiat porro.",
-      likes:0
-    },
+    }
   ]);
 
   function like(id){

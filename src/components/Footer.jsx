@@ -6,9 +6,9 @@ function Footer({likeCount}) {
             <div className="container p-4">
                 <div className="row">
                     <div className="col-lg-12 col-md-12 mb-12 mb-md-0">
-                        <h5 className="text-uppercase">Total likes</h5>
+                        <h5 className="text-uppercase">{likeCount === 0 ? "" : "Total likes"}</h5>
                         <h3>
-                            {likeCount}!
+                            {likeCount === 0 ? "" : likeCount}
                         </h3>
                     </div>
 
