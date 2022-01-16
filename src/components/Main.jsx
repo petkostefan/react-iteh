@@ -1,9 +1,12 @@
 import React from 'react'
+import Post from './Post'
 
-function Main() {
+function Main({posts, onLike}) {
     return (
-        <div className="container m-5" style={{height:60+'vh'}}>
-            <h1>Hello</h1>
+        <div className="d-flex container flex-column">
+        {posts.map((post) => (
+          <Post key={post.id} post={post} onLike={onLike} />
+        ))}
         </div>
     )
 }
